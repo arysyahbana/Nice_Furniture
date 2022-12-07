@@ -1,0 +1,320 @@
+.fixed-top{
+    background-color: #2C3639;
+}
+
+/* .btn2{
+    background-color: #2C3639;
+} */
+
+@font-face {
+    font-family: 'K2D';
+    src: url(/font/K2D-Medium.ttf);
+}
+
+body {
+    font-family: 'K2D';
+}
+
+.spasi {
+    height: 100px;
+}
+
+.spasi2 {
+    height: 20px;
+}
+
+.spasi3 {
+    height: 100px;
+}
+
+.banner {
+    background-image: url(/img/bg.png);
+    height: 60vh;
+}
+
+.bed1 {
+    max-height: 42vw;
+}
+
+.cat {
+    max-height: 29vw;
+}
+.bw {
+    min-width: 9rem;
+}
+/* .search {
+    margin-top: 500px;
+}
+
+.display-3{
+    margin-top: 380px;
+}
+
+.card-img {
+    max-height: 646px;
+    border-radius: 30px;
+}
+
+.couch {
+    max-width: 30rem;
+}
+
+.bed {
+    max-height: 41rem;
+}
+
+.tc {
+    max-height: 25rem;
+} */
+
+.footer1 {
+    background-color: #2B4F5A;
+}
+
+.footer2 {
+    background-color: #2C3639;
+    height: 70px;
+}
+
+/* .nav-link {
+    min-width: 100px;
+    max-height: 40px;
+} */
+
+.blog {
+    min-width: 150px;
+    max-height: 40px;
+}
+
+.blog2 {
+    min-width: 100px;
+}
+
+.re {
+    max-width: 18rem;
+}
+
+/* .bg {
+    max-width: 900px;
+} */
+
+/* .g3 {
+    padding-left: 979px;
+    margin-top: -570px;
+    max-height: 719px;
+} */
+
+.formreg {
+    margin-top: 150px;
+    margin-right: 700px;
+}
+
+.kartu {
+    max-width: 22rem;
+    min-width: 18rem;
+}
+
+/* Awal Tracking */
+.flex {
+    display: flex;
+  }
+  .position-relative {
+    position: relative;
+  }
+  .check-left-line {
+    border-left: 1px solid #000000;
+    position: absolute;
+    height: 70%;
+    top: 30px;
+    left: 8px;
+  }
+  .checks {
+    color: #000000;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  .checks li {
+    margin-bottom: 30px;
+    animation: 1s ease-in 0s 1 slideInFromTop;
+  }
+  .checks li:before {
+    content: "⬤";
+    padding-right: 15px;
+  }
+  .checks li:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .checks li:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .checks li:nth-child(3) {
+    animation-delay: 2s;
+  }
+  /* @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
+  
+/* Akhir Tracking */
+
+/* Awal Detail Produk */
+*, ::after, ::before {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 2.25rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+article, footer {
+	padding: 1rem 1rem 0;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gallery {
+	margin: 2rem auto 5rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 80px);	/*#*/
+	grid-template-rows: 90px 100px;
+	gap: 10px;
+	justify-content: center;
+	align-content: end;
+}
+@media (min-width: 576px) {
+	.gallery {max-width: 540px; }
+}
+@media (min-width: 768px) {
+	.gallery { max-width: 720px; }
+	article {
+		margin-left: 3rem!important;
+	}
+}
+@media (min-width: 992px) {
+	.gallery { max-width: 960px; }
+}
+.gallery div {
+	position: relative;
+	grid-column: span 4;	/*#*/
+}
+.img-thumb {
+	padding: 0.25rem;
+	max-width: 100%;
+	height: auto;
+	background-color: LightSalmon;
+	border-radius: 0.25rem;
+}
+.gallery img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	-webkit-animation: animatezoom 600ms;
+	animation: animatezoom 600ms;
+}
+@keyframes animatezoom
+	{from{transform:scale(0.2)} to{transform:scale(1)}}
+@-webkit-keyframes animatezoom {
+	from{-webkit-transform:scale(0.2)}
+	to{-webkit-transform:scale(1)}}
+
+.transluz {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.solid {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.copy {
+	position: fixed;
+	bottom: 0;
+	width: calc(100% - 16px);
+	text-align: center;
+}
+
+.slide2 {
+    display: none;
+}
+/* Akhir Detail Produk */
+
+/* Awal Card Slider */
+.carousel-control-prev-icon {
+    background-image: url(/icon/arrow-left-long-solid.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(/icon/arrow-right-long-solid.svg);
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .carousel-item {
+        justify-content: center;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+/* Akhir Card Slider */
+
+.td1{
+    min-width: 3rem;
+}
+
+.td2{
+    width: 50rem;
+}
+
+.td3{
+    width: 10rem;
+    max-width: 10rem;
+}
+
+.imgtumb{
+    padding: 5px;
+}
